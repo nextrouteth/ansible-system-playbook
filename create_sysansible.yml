@@ -1,6 +1,6 @@
-- name: create_sysansible
-  hosts: all
-  become: yes
-  become_user: root
+- hosts: all
+  become: True
+  user: ansible
+
   roles:
-    - create_sysansible
+    - create_user
